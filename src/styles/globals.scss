@@ -1,0 +1,55 @@
+// Check variable.scss when changing the :root values.
+:root {
+  --app-spacer: 20px;
+  --app-border-radius: 5px;
+
+  --body-bg-color: #999;
+  --body-text-color: #efefef;
+
+  --header-bg-color: #1e1e1e;
+  --navbar-bg-color: #2a2a2a;
+  --navlink-hover: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-spacer: 20px;
+    --app-border-radius: 5px;
+
+    --body-bg-color: #999;
+    --body-text-color: #efefef;
+
+    --header-bg-color: #1e1e1e;
+    --navbar-bg-color: #2a2a2a;
+    --navlink-hover: #1a1a1a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+  background: var(--body-bg-color);
+  color: var(--body-text-color);
+}
+
+.box {
+  padding: 0;
+  padding: var(--app-spacer);
+}
+
+.rouned-corner {
+  border-radius: var(--app-border-radius);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

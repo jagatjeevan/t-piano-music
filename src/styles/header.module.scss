@@ -1,0 +1,38 @@
+.header {
+  background: var(--header-bg-color);
+  padding: calc(var(--app-spacer) / 2) var(--app-spacer);
+  text-align: center;
+}
+
+.navbar {
+  background: var(--navbar-bg-color);
+  transition: 0.5s all ease-in-out;
+  overflow: hidden;
+
+  ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
+    gap: calc(var(--app-spacer) / 2);
+  }
+
+  li {
+    padding: calc(var(--app-spacer) / 2);
+    border-radius: var(--app-border-radius);
+  }
+
+  li:hover {
+    cursor: pointer;
+    background-color: var(--navlink-hover);
+  }
+}
+
+.open {
+  height: auto;
+  padding: var(--app-spacer);
+}
+
+.close {
+  height: 0;
+  padding: 0 var(--app-spacer);
+}
