@@ -55,7 +55,7 @@ $heart-beat-color: #ef2b2b;
 .courseGallery {
   margin: var(--app-spacer);
   display: grid;
-  grid-gap: 5px;
+  grid-gap: var(--app-spacer);
   // grid-auto-rows: 175px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-auto-flow: dense;
