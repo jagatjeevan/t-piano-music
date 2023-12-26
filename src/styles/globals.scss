@@ -3,8 +3,8 @@
   --app-spacer: 20px;
   --app-border-radius: 5px;
 
-  --body-bg-color: #999;
-  --body-text-color: #efefef;
+  --body-bg-color: #efefef;
+  --body-text-color: #333;
 
   --header-bg-color: #1e1e1e;
   --navbar-bg-color: #2a2a2a;
@@ -16,10 +16,10 @@
     --app-spacer: 20px;
     --app-border-radius: 5px;
 
-    --body-bg-color: #999;
+    --body-bg-color: #1a1a1a;
     --body-text-color: #efefef;
 
-    --header-bg-color: #1e1e1e;
+    --header-bg-color: #343434;
     --navbar-bg-color: #2a2a2a;
     --navlink-hover: #1a1a1a;
   }
@@ -41,7 +41,6 @@ body {
 }
 
 .box {
-  padding: 0;
   padding: var(--app-spacer);
 }
 
@@ -52,4 +51,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
 }

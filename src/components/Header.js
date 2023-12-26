@@ -1,10 +1,13 @@
 "use client";
 
-import { useState } from "react";
-import styles from "../styles/header.module.scss";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
 import HamburgMenu from "./HamburgMenu";
 import Logo from "./Logo";
-import Link from "next/link";
+
+import styles from "../styles/header.module.scss";
 
 const MenuBar = ({ isMenuVisible }) => {
   return (
@@ -38,12 +41,17 @@ const MenuBar = ({ isMenuVisible }) => {
 };
 
 export default function Header() {
+  const router = useRouter();
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+  useEffect(() => {
+    setIsMenuVisible(false);
+  }, [router]);
 
   return (
     <div>
       <header className={styles.header}>
-        <HamburgMenu isMenuOpen={isMenuVisible} toggleMenu={setIsMenuVisible} />
+        {/* <HamburgMenu isMenuOpen={isMenuVisible} toggleMenu={setIsMenuVisible} /> */}
         <Logo />
       </header>
       <MenuBar isMenuVisible={isMenuVisible} />

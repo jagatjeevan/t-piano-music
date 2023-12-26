@@ -1,6 +1,6 @@
 import { PT_Sans_Narrow } from "next/font/google";
 
-const pt_sans_narrow = PT_Sans_Narrow({
+export const pt_sans_narrow = PT_Sans_Narrow({
   weight: ["400"],
   style: ["normal"],
   subsets: ["latin"],
