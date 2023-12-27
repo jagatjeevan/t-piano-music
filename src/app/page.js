@@ -33,7 +33,8 @@ const Home = () => {
           target="_blank"
         >
           here
-        </a>
+        </a>{' '}
+        or call us : <a href="tel:09938273360">09938273360</a>
       </article>
     </>
   );
