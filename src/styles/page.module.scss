@@ -54,6 +54,7 @@ $heart-beat-color: #ef2b2b;
 
 .courseGallery {
   margin: var(--app-spacer);
+  margin-top: 0;
   display: grid;
   grid-gap: var(--app-spacer);
   // grid-auto-rows: 175px;
@@ -73,5 +74,19 @@ $heart-beat-color: #ef2b2b;
   h4 {
     font-size: 2em;
     margin-bottom: calc(var(--app-spacer) / 2);
+  }
+}
+
+.description {
+  p {
+    margin: var(--app-spacer) 0;
+
+    &::first-letter {
+      font-size: 1.2rem;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 }

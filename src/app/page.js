@@ -1,47 +1,8 @@
 import Image from 'next/image';
+import Courses from '@/components/Courses';
 import styles from '../styles/page.module.scss';
-import { pt_sans_narrow } from '@/components/Logo';
-
-const courses = [
-  {
-    id: 1,
-    img: '/courses/guitar.jpeg',
-    alt: 'Learn Guitar',
-    name: 'Guitar class',
-    description:
-      'Learn Guitar from the master. Lorem ipsum dolor sit amet, no vix possit pertinacia. Velit quaeque has ut, amet commodo ad per, no alia impedit invenire his. Ex eum habeo audire, quo quod impetus postulant et. Cu vim mucius integre ocurreret. No mei detracto persecuti mnesarchum, agam fugit an eum. Te solet sanctus repudiare mea.',
-  },
-  {
-    id: 2,
-    img: '/courses/piano.jpeg',
-    alt: 'Learn Piano',
-    name: 'Piano class',
-    description:
-      'Lorem  commodo ad per, no alia impedit invenire his. Ex eum hamucius integre ocurreret. No mei detracto persecuti mnesarchum, agam fugit an eum. Te solet sanctus repudiare mea.',
-  },
-  {
-    id: 3,
-    img: '/courses/cello.jpeg',
-    alt: 'Learn Cello',
-    name: 'Cello class',
-    description:
-      'Detracto persecuti mnesarchum, agam fugit an eum. Te solet sanctus repudiare mea. Lorem  commodo ad per, no alia impedit invenire his. Ex eum hamucius integre ocurreret. No mei',
-  },
-];
-
-const Box = ({ item }) => {
-  return (
-    <div className={styles.coursesBox}>
-      <Image src={item.img} alt={item.alt} width={100} height={100} />
-      <h4 className={pt_sans_narrow.className}>{item.name}</h4>
-      <p>{item.description}</p>
-    </div>
-  );
-};
 
 const Home = () => {
-  const getCourses = () => courses.map((course) => <Box key={course.id} item={course} />);
-
   return (
     <>
       <Image
@@ -51,7 +12,29 @@ const Home = () => {
         alt="Music school"
         className={styles.banner}
       />
-      <article className={styles.courseGallery}>{getCourses()}</article>
+      <article className={`box ${styles.description}`}>
+        <p>We offer music education for individuals of just about every age and skill level.</p>
+        <p>
+          Explore several art forms as your child builds creativity and confidence in our new visual
+          arts classes for ages 2-5.
+        </p>
+        <p>
+          We have talented and very experienced instructors who teach piano, violin, guitar, cello,
+          and other instruments.
+        </p>
+      </article>
+      <article className={styles.courseGallery}>
+        <Courses />
+      </article>
+      <article className="box">
+        Locate us here :{' '}
+        <a
+          href="https://www.google.com/maps/place/T's+Piano+Music+School+Cuttack./@20.4723269,85.8527326,17z/data=!4m14!1m7!3m6!1s0x3a1913be8a437633:0x3038494ac5cdc28c!2sT's+Piano+Music+School+Cuttack.!8m2!3d20.4723269!4d85.8553075!16s%2Fg%2F11swyr3398!3m5!1s0x3a1913be8a437633:0x3038494ac5cdc28c!8m2!3d20.4723269!4d85.8553075!16s%2Fg%2F11swyr3398?entry=ttu"
+          target="_blank"
+        >
+          here
+        </a>
+      </article>
     </>
   );
 };
