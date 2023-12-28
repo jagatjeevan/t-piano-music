@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { pt_sans_narrow } from '@/components/Logo';
 import styles from '../styles/page.module.scss';
 
 const courses = [
@@ -33,7 +32,7 @@ const Box = ({ item }) => {
   return (
     <div className={styles.coursesBox}>
       <Image src={item.img} alt={item.alt} width={100} height={100} />
-      <h4 className={pt_sans_narrow.className}>{item.name}</h4>
+      <h4>{item.name}</h4>
       <p>{item.description}</p>
     </div>
   );

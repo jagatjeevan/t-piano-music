@@ -1,31 +1,19 @@
-import Image from 'next/image';
 import Courses from '@/components/Courses';
+import HeroBanner from '@/components/HeroBanner';
+import Welcome from '@/components/Welcome';
 import styles from '../styles/page.module.scss';
 
 const Home = () => {
   return (
     <>
-      <Image
-        src="/gallery/bg1.jpeg"
-        width={1200}
-        height={300}
-        alt="Music school"
-        className={styles.banner}
-      />
-      <article className={`box ${styles.description}`}>
-        <p>We offer music education for individuals of just about every age and skill level.</p>
-        <p>
-          Explore several art forms as your child builds creativity and confidence in our new visual
-          arts classes for ages 2-5.
-        </p>
-        <p>
-          We have talented and very experienced instructors who teach piano, violin, guitar, cello,
-          and other instruments.
-        </p>
-      </article>
-      <article className={styles.courseGallery}>
-        <Courses />
-      </article>
+      <HeroBanner />
+      <Welcome />
+      <div className="box">
+        <h1 className="heading">Courses</h1>
+        <article className={styles.courseGallery}>
+          <Courses />
+        </article>
+      </div>
       <article className="box">
         Locate us here :{' '}
         <a

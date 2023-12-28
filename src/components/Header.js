@@ -1,21 +1,17 @@
-"use client";
+'use client';
 
-import { useRouter } from "next/navigation";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
-import HamburgMenu from "./HamburgMenu";
-import Logo from "./Logo";
+// import HamburgMenu from "./HamburgMenu";
+import Logo from './Logo';
 
-import styles from "../styles/header.module.scss";
+import styles from '../styles/header.module.scss';
 
 const MenuBar = ({ isMenuVisible }) => {
   return (
-    <nav
-      className={`${styles.navbar} ${
-        isMenuVisible ? styles.open : styles.close
-      }`}
-    >
+    <nav className={`${styles.navbar} ${isMenuVisible ? styles.open : styles.close}`}>
       <ul>
         <li>
           <Link href="/">Welcome</Link>
