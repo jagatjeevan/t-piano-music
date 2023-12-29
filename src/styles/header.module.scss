@@ -1,7 +1,13 @@
 .header {
   background: var(--header-bg-color);
+  color: var(--header-text-color);
   padding: calc(var(--app-spacer) / 2) var(--app-spacer);
   text-align: center;
+}
+
+.logo {
+  color: var(--header-text-color);
+  font-size: 30px;
 }
 
 .navbar {

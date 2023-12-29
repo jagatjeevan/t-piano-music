@@ -2,11 +2,10 @@
 :root {
   --app-spacer: 20px;
   --app-border-radius: 5px;
-
-  --body-bg-color: #efefef;
-  --body-text-color: #333;
-
-  --header-bg-color: #1e1e1e;
+  --body-bg-color: #ffffec;
+  --body-text-color: #597e52;
+  --header-bg-color: #62522f;
+  --header-text-color: #e4e4e4;
   --navbar-bg-color: #2a2a2a;
   --navlink-hover: #1a1a1a;
 }
@@ -20,6 +19,7 @@
     --body-text-color: #efefef;
 
     --header-bg-color: #343434;
+    --header-text-color: #e4e4e4;
     --navbar-bg-color: #2a2a2a;
     --navlink-hover: #1a1a1a;
   }
