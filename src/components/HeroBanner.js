@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from '../styles/HeroBanner.module.scss';
 import { useEffect, useState } from 'react';
 
-const images = ['/gallery/bg1.jpeg', '/gallery/bg2.jpeg', '/gallery/bg3.jpeg'];
+const images = ['/gallery/piano.jpg', '/gallery/piano1.jpg', '/gallery/drums.jpg'];
 let timer;
 let timeInterval = 3500;
 

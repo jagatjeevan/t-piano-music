@@ -6,25 +6,25 @@ const courses = [
     id: 1,
     img: '/courses/guitar.jpeg',
     alt: 'Learn Guitar',
-    name: 'Guitar class',
+    name: 'Guitar',
     description:
-      'Learn Guitar from the master. Lorem ipsum dolor sit amet, no vix possit pertinacia. Velit quaeque has ut, amet commodo ad per, no alia impedit invenire his. Ex eum habeo audire, quo quod impetus postulant et. Cu vim mucius integre ocurreret. No mei detracto persecuti mnesarchum, agam fugit an eum. Te solet sanctus repudiare mea.',
+      'Learn how to play Guitar from the master from beginner to advance level. The lessons are so well taught, the school has really changed the lives of millions of people all over the world, keep the good songs coming!',
   },
   {
     id: 2,
     img: '/courses/piano.jpeg',
-    alt: 'Learn Piano',
+    alt: 'Piano',
     name: 'Piano class',
     description:
-      'Lorem  commodo ad per, no alia impedit invenire his. Ex eum hamucius integre ocurreret. No mei detracto persecuti mnesarchum, agam fugit an eum. Te solet sanctus repudiare mea.',
+      'The school has changed the mindset of millions. The institute has been very good in communicating and imparting knowledge to make great musician. Practice notes and chords interactively and receive instant feedback. All you need is the flowkey app and your piano or keyboard.',
   },
   {
     id: 3,
-    img: '/courses/cello.jpeg',
-    alt: 'Learn Cello',
-    name: 'Cello class',
+    img: '/courses/drums.jpeg',
+    alt: 'Learn Drums',
+    name: 'Drums',
     description:
-      'Detracto persecuti mnesarchum, agam fugit an eum. Te solet sanctus repudiare mea. Lorem  commodo ad per, no alia impedit invenire his. Ex eum hamucius integre ocurreret. No mei',
+      'The drums lie at the core of understanding music – beats and rhythms. We offer personalised training to identify your style as a drummer – from the basics to more advanced routines and grooves. Jazz, rock, pop, or metal, our classes will help you become a passionate drummer in the genre of your choice! We also expose our students to performance-based drumming and jam live with other instrumentalists and vocalists.',
   },
 ];
 
